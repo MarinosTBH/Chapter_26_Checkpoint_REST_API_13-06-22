@@ -6,7 +6,7 @@ const { findAllUsers, findOne, addUsers, editUsers, deleteUsers } = require('../
 const UsersRoute  = express.Router()
 
 
-UsersRoute.get('/all', findAllUsers) // GET :  RETURN ALL USERS 
+UsersRoute.get('/', findAllUsers) // GET :  RETURN ALL USERS 
 
 
 UsersRoute.get('/one/:id', findOne) // GET :  RETURN A USER 

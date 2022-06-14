@@ -16,6 +16,6 @@ app.get('/', (req,res)=>{
 
 // express.json and url encoded are only needed for POST AND PUT methods not get 
 app.use(express.json())
-app.use('/', UsersRoute)
+app.use('/api/users', UsersRoute)
 
 app.listen(process.env.port, ()=>console.log(`Server at ${process.env.port}`))
